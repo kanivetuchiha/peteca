@@ -4,7 +4,7 @@ export default function App() {
   
   const [lista, setLista] = useState([]);
 
-  useEffect(() => { 
+   useEffect(() => { 
     const receberListaProdutos = async () => {
         const resposta = await fetch('https://fakestoreapi.com/products');
         const dados = await resposta.json();
