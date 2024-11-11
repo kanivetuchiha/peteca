@@ -1,18 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Page1 from './exemplo1'
-import Page2 from './exemplo2'
-import Page3 from './exemplo3'
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
        <Routes>
-            <Route path="/" element={<Page1/>}/>
-            <Route path="/exemplo2/index.jsx" element={<Page2/>}/>
-            <Route path="/exemplo3/index.jsx" element={<Page3/>}/>
+            <Route path="/" element={<Home/>}/>
        </Routes>
     </BrowserRouter>
   </StrictMode>,
